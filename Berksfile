@@ -14,6 +14,9 @@ cookbook 'masala_base', :git => 'https://github.com/PaytmLabs/masala_base.git', 
 # Dependencies of masala_keepalived
 cookbook 'masala_keepalived', :git => 'https://github.com/PaytmLabs/masala_keepalived.git', :ref => 'develop'
 
+# Dependencies of this recipe
+cookbook 'haproxy', :git => 'https://github.com/PaytmLabs/chef-haproxy.git', :ref => 'feature-better-defaults'
+
 ## Now load the primary metadata
 metadata
 
