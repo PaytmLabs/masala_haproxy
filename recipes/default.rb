@@ -21,6 +21,6 @@ node.default['haproxy']['global_options'] = ['quiet']
 node.default['haproxy']['admin']['address_bind'] = '0.0.0.0'
 
 include_recipe "masala_base::default"
-include_recipe "haproxy::default"
+include_recipe "haproxy::manual"
 include_recipe "masala_haproxy::datadog"
 
