@@ -6,7 +6,7 @@ description      'Installs/Configures masala_haproxy'
 long_description 'Installs/Configures masala_haproxy'
 version          '0.1.0'
 
-depends          'haproxy', '~> 1.6.7'
+depends          'haproxy', '~> 1.6.6'
 depends          'masala_base', '~> 0.1.0'
 depends          'masala_keepalived', '~> 0.1.0'
 depends          'masala_ldap', '~> 0.1.0'
