@@ -6,4 +6,6 @@ default['keepalived']['check_scripts']['chk_haproxy']['script'] = 'killall -0 ha
 default['keepalived']['check_scripts']['chk_haproxy']['interval'] = 2
 default['keepalived']['check_scripts']['chk_haproxy']['weight'] = 2
 
+default['rsyslog']['default_facility_logs']['local0.*'] = '/var/log/haproxy'
+default['rsyslog']['default_facility_logs']['local1.warn'] = '/var/log/haproxy-warn'
 

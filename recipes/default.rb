@@ -24,3 +24,19 @@ include_recipe "masala_base::default"
 include_recipe "haproxy::manual"
 include_recipe "masala_haproxy::datadog"
 
+logrotate_app 'haproxy' do
+  path      '/var/log/haproxy'
+  frequency 'daily'
+  options   ['missingok', 'delaycompress', 'notifempty']
+  rotate    7
+  create    "644 #{node.haproxy.user} #{node.haproxy.group}"
+end
+
+logrotate_app 'haproxy-warn' do
+  path      '/var/log/haproxy-warn'
+  frequency 'daily'
+  options   ['missingok', 'delaycompress', 'notifempty']
+  rotate    7
+  create    "644 #{node.haproxy.user} #{node.haproxy.group}"
+end
+
