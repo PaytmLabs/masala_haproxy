@@ -17,7 +17,9 @@
 # limitations under the License.
 
 node.default['haproxy']['enable_default_http'] = false
-node.default['haproxy']['global_options'] = ['quiet']
+node.default['haproxy']['global_options'] = {
+  'quiet' => ''
+}
 node.default['haproxy']['admin']['address_bind'] = '0.0.0.0'
 
 include_recipe "masala_base::default"
