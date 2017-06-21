@@ -12,6 +12,7 @@ cookbook 'system', :git => 'https://github.com/PaytmLabs/chef-system.git', :ref 
 cookbook 'masala_base', :git => 'https://github.com/PaytmLabs/masala_base.git', :ref => 'develop'
 
 # Dependencies of masala_keepalived
+cookbook 'keepalived', :git => 'https://github.com/PaytmLabs/chef-keepalived.git', :ref => 'feature-instance-attrs-fix'
 cookbook 'masala_keepalived', :git => 'https://github.com/PaytmLabs/masala_keepalived.git', :ref => 'develop'
 
 # Dependencies of this recipe
